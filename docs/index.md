@@ -1,11 +1,11 @@
-# Obsidian Notes
+# 0-Problems
+https://app.codility.com/programmers/lessons/1-iterations/
+## 4 - Counting Elements
+- [ ] [[4c-MaxCounters]]
+- [ ] [[4d-MissingInteger]]
+## 5 - Prefix Sums
+- [ ] [[5a-PassingCars]]
+- [ ] [[5b-CountDiv]]
+- [ ] [[5c-GenomicRangeQuery]]
+- [ ] [[5d-MinAvgTwoSlice]]
 
-Publish your public notes with MkDocs
-
-## Hello World!
-
-The `index.md` in the `/docs` folder is the homepage you see here.
-
-The folders in `/docs` appear as the main sections on the navigation bar.
-
-The notes appear as pages within these sections. For example, [[Note 1]] in `Topic 1`
