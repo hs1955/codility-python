@@ -14,4 +14,13 @@
 - [ ] [[6b-MaxProductOfThree]]
 - [ ] [[6c-Triangle]]
 - [ ] [[6d-NumberOfDiscIntersections]]
-
+## 7 - Stacks and Queues
+- [ ] [[7a-Brackets]]
+- [ ] [[7b-Fish]]
+- [ ] [[7c-Nesting]]
+- [ ] [[7d-StoneWall]]
+## 8 - Leader
+- [ ] [[8-Leader]]
+- [ ] [[8a-Dominator]]
+- [ ] [[8b-EquiLeader]]
+## 9 - Maximum Slice Problem
