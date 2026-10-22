@@ -1,0 +1,2280 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../7a-Brackets/">
+      
+      
+        <link rel="next" href="../7c-Nesting/">
+      
+      
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>7b-Fish - obsidian-mkdocs template</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#7b-fish" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="obsidian-mkdocs template" class="md-header__button md-logo" aria-label="obsidian-mkdocs template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            obsidian-mkdocs template
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7b-Fish
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="obsidian-mkdocs template" class="md-nav__button md-logo" aria-label="obsidian-mkdocs template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    obsidian-mkdocs template
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lessons
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lessons
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4 CountingElements
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    4 CountingElements
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-CountingElements/4c-MaxCounters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4c-MaxCounters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-CountingElements/4d-MissingInteger/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4d-MissingInteger
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 PrefixSums
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    5 PrefixSums
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-PrefixSums/5-PrefixSums/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5-PrefixSums
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-PrefixSums/5a-PassingCars/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5a-PassingCars
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-PrefixSums/5b-CountDiv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5b-CountDiv
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-PrefixSums/5c-GenomicRangeQuery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5c-GenomicRangeQuery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-PrefixSums/5d-MinAvgTwoSlice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5d-MinAvgTwoSlice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6 Sorting
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    6 Sorting
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6-Sorting/6a-Distinct/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6a-Distinct
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6-Sorting/6b-MaxProductOfThree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6b-MaxProductOfThree
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6-Sorting/6c-Triangle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6c-Triangle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6-Sorting/6d-NumberOfDiscIntersections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6d-NumberOfDiscIntersections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7 StacksAndQueues
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    7 StacksAndQueues
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7a-Brackets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7a-Brackets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7b-Fish
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7b-Fish
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Notes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-codility-coding-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Codility Coding Patterns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-not-get-confused-by-your-own-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Not Get Confused by Your Own Code
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Not Get Confused by Your Own Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-workflow-that-reduces-the-load" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Workflow that Reduces the Load
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abstraction-how-good-is-it-really" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abstraction - How Good is it Really?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Abstraction - How Good is it Really?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Message
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enums-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enums in Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self-documenting-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Self-documenting Code
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Self-documenting Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-self-documenting-code-cannot-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Self-documenting code CANNOT do?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bad-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bad Example:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bad Example:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verdict" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verdict
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#better-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Better Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-object-and-function-naming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variable, Object and Function Naming
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tuples-are-immutable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tuples are Immutable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#named-tuples-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Named Tuples in Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test Cases
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attempt-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attempt 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attempt-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attempt 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attempt-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attempt 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7c-Nesting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7c Nesting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7d-StoneWall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7d StoneWall
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8 Leader
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    8 Leader
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8-Leader/8-Leader/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Leader
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8-Leader/8a-Dominator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8a-Dominator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8-Leader/8b-EquiLeader/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8b EquiLeader
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Notes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-codility-coding-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Codility Coding Patterns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-not-get-confused-by-your-own-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Not Get Confused by Your Own Code
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Not Get Confused by Your Own Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-workflow-that-reduces-the-load" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Workflow that Reduces the Load
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abstraction-how-good-is-it-really" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abstraction - How Good is it Really?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Abstraction - How Good is it Really?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Message
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enums-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enums in Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self-documenting-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Self-documenting Code
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Self-documenting Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-self-documenting-code-cannot-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Self-documenting code CANNOT do?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bad-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bad Example:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bad Example:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verdict" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verdict
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#better-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Better Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-object-and-function-naming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variable, Object and Function Naming
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tuples-are-immutable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tuples are Immutable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#named-tuples-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Named Tuples in Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test Cases
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attempt-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attempt 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attempt-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attempt 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attempt-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attempt 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="7b-fish">7b-Fish<a class="headerlink" href="#7b-fish" title="Permanent link">&para;</a></h1>
+<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h2>
+<h3 id="common-codility-coding-patterns">Common Codility Coding Patterns<a class="headerlink" href="#common-codility-coding-patterns" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>[!tip] Common Codility Coding Patterns
+Most Codility tricks fall into a few buckets:
+- <strong>Track one thing as you go</strong> (running min/max/sum) → O(n)
+- <strong>Use a stack</strong> for nested or "frontier" problems → O(n)
+- <strong>Use a set or hashmap</strong> for lookup problems → O(n)
+- <strong>Sort first</strong> to turn O(n²) comparisons into O(n log n)
+- <strong>Two pointers</strong> moving from ends or at different speeds
+- <strong>Prefix sums</strong> for range queries</p>
+</blockquote>
+<h3 id="how-to-not-get-confused-by-your-own-code">How to Not Get Confused by Your Own Code<a class="headerlink" href="#how-to-not-get-confused-by-your-own-code" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>[!tip] How to Not Get Confused by Your Own Code
+Funnily enough, the trick is to <strong>plan first</strong>. Then write.
+Most candidates' biggest mistake is <strong>writing a solution WHILE trying to determine the optimal solution</strong>
+- Why? Because these candidates are forcing themselves to multitask between 4 things at once:
+  - Understanding the problem
+  - Deriving the algorithm
+  - Tracking code state
+  - Making readable code</p>
+<h4 id="the-workflow-that-reduces-the-load">The Workflow that Reduces the Load<a class="headerlink" href="#the-workflow-that-reduces-the-load" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Understand - Don't think about code</li>
+<li>Restate the problem in your own words.</li>
+<li>Write the reworded problem down in your notes</li>
+<li>Identify:<ol>
+<li>Inputs</li>
+<li>Outputs</li>
+<li>The Key to the optimal solution<ol>
+<li>Most Codility Questions have a naive slow solution of like <span class="arithmatex">\(O(n^2)\)</span>, like finding all valid pairs</li>
+<li>and a quick solution. In this exercise, the trick is that only the frontier fish matters, so we need to use a stack data type, which is at worst <span class="arithmatex">\(O(2n) = O(n)\)</span></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Pseudocode and Dry Runs</li>
+<li>Work through 2-3 small examples by hand</li>
+<li>Find the pattern(s)</li>
+<li>Write a pseudocode algorithm in plain English:<ol>
+<li><img alt="7b-Fish#^7886db" src="./#7886db" /></li>
+</ol>
+</li>
+<li>Translate Pseudocode into Code</li>
+<li>If you get confused by your own code - <strong>delete and rewrite it</strong>. This is quicker than debugging a complicated solution</li>
+<li>Test and Verify Code</li>
+<li>Ensure it works as intended</li>
+<li>Ensure it meets <strong>ALL</strong> criteria in the question</li>
+<li>Clean Up - Delete notes, prints, draft comments</li>
+</ol>
+</blockquote>
+<h4 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h4>
+<p><div class="highlight"><pre><span></span><code>stack of surviving fish
+for each new fish:
+    while top of stack fights new fish and new fish is bigger:
+        pop
+    if top still fights new fish:
+        new fish dies
+    else:
+        push new fish
+</code></pre></div>
+^7886db</p>
+<h3 id="abstraction-how-good-is-it-really">Abstraction - How Good is it Really?<a class="headerlink" href="#abstraction-how-good-is-it-really" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>[!danger] Abstraction - How good is it really?
+Abstraction is the process of simplifying complex systems by focusing on essential details while hiding unnecessary complexity, allowing programmers to manage large systems using high-level commands.</p>
+<blockquote>
+<p>[!tldr]- Attempt 2
+<img alt="7b-Fish#Attempt 2" src="./#attempt-2" />
+My 2nd attempt does use some form of abstraction which takes 2 Fish Named Tuples, hides a fair amount of logic, and returns 3 possible Enum result states.
+- Seemingly, abstraction here has allowed for the creation of a single function that can help us compare 2 fish in all situations we could desire...</p>
+</blockquote>
+<p>But has it actually simplified the system?
+- We created 2 constants: <code>UPSTREAM</code> and <code>DOWNSTREAM</code>
+- We created a Named Tuple: <code>Fish</code>, which has a <code>size</code> and <code>direction</code>.
+- We created an enum <code>Fish_Encounter_Result</code> specifically to represent the 3 possible results it could return.
+- We created a helper function <code>fish_encounter</code> that holds <strong>critical</strong> logic to the functioning of <code>solution</code>
+  - The word, <code>encounter</code>, is not a term used in the original question, meaning <strong>I've invented a new term</strong> for this solution which will force readers to understanding the code, just to understand the meaning of the term. Not good at all!
+- And while everything is named with its exact purpose, altogether it has produced some very long words and lines
+- And <strong>ALL</strong> of that is before we even reach <strong>solution</strong>...</p>
+<p>No. This abstraction failed to simplify the complexity of the system. So what gives?</p>
+<h4 id="key-message">Key Message<a class="headerlink" href="#key-message" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Match the weight/size of the abstraction to the weight/size of the problem.</strong>
+"Will this abstraction be used, named, or reasoned about outside this function?"
+- If yes — enum, class, namedtuple, module-level helper: all fair game.
+- If no — inline it. Let the algorithm be the thing the reader sees.</p>
+</blockquote>
+<p>This problem is:
+- A single stack
+- One kind of interaction (downstream vs upstream)
+- One decision per interaction (who wins)</p>
+<p>That's small. The abstraction should be small too.
+- <code>Fish</code> Named Tuple is a perfect example. We could just use a raw tuple instead: <code>(size, direction)</code>. So <code>river[-1].size vs river[-1][0]</code>. <code>river[-1].size</code> is nicer for sure. But is it really worth introducing an extra type for a 10 line Codility answer? No - probably not.</p>
+</blockquote>
+<h3 id="enums-in-python">Enums in Python<a class="headerlink" href="#enums-in-python" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
+
+<span class="c1"># class syntax</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Color</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="n">RED</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">GREEN</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="n">BLUE</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="c1"># functional syntax</span>
+<span class="n">Color</span> <span class="o">=</span> <span class="n">Enum</span><span class="p">(</span><span class="s1">'Color'</span><span class="p">,</span> <span class="p">[(</span><span class="s1">'RED'</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="s1">'GREEN'</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="s1">'BLUE'</span><span class="p">,</span> <span class="mi">3</span><span class="p">)])</span>
+<span class="c1"># or in simple cases</span>
+<span class="n">Color</span> <span class="o">=</span> <span class="n">Enum</span><span class="p">(</span><span class="s1">'Color'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'RED'</span><span class="p">,</span> <span class="s1">'GREEN'</span><span class="p">,</span> <span class="s1">'BLUE'</span><span class="p">])</span>
+
+<span class="n">Color</span><span class="o">.</span><span class="n">RED</span>  <span class="c1"># returns &lt;Animal.ant: 1&gt;</span>
+<span class="n">Color</span><span class="p">[</span><span class="s1">'RED'</span><span class="p">]</span>  <span class="c1"># returns &lt;Animal.ant: 1&gt; (string lookup)</span>
+<span class="n">Color</span><span class="o">.</span><span class="n">RED</span><span class="o">.</span><span class="n">name</span>  <span class="c1"># returns 'RED' (inverse lookup)</span>
+</code></pre></div>
+- Note that B is 0s and 1s, not a Direction Enum. So better to just use constants for that</p>
+<h3 id="self-documenting-code">Self-documenting Code<a class="headerlink" href="#self-documenting-code" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>[!tip] What is Self-documenting Code?
+A piece of code is self-documenting when a reader can understand <strong>what it does and why</strong> without:
+1. Jumping to another location to resolve a name
+2. Holding hidden context in their head
+3. Reconstructing the author's intent from the structure</p>
+<p>That's it. It's a property of the <strong>reader's experience</strong>, not of how many names you invented.
+- Surprisingly, trying to create a more accurate representation of the data, can go against readable data.</p>
+<h4 id="what-self-documenting-code-cannot-do">What Self-documenting code CANNOT do?<a class="headerlink" href="#what-self-documenting-code-cannot-do" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Code explains "what", not "why". Code cannot provide the <strong>intent</strong>, the <strong>context</strong>, or the "<strong>why</strong>" behind a decision.</li>
+<li>A comment like: <code>// Using a binary search because this dataset is expected to have millions of records</code></li>
+<li>Code cannot fully describe <strong>side effects</strong> or <strong>contracts</strong>.</li>
+<li>Side Effect - Code changes something that is not obvious by it's interface/signature: E.g. Modifies a global variable</li>
+<li>Contract - Requires prequisite conditions to be met before it's called.</li>
+</ul>
+<h4 id="bad-example">Bad Example:<a class="headerlink" href="#bad-example" title="Permanent link">&para;</a></h4>
+<p><div class="highlight"><pre><span></span><code><span class="n">fish_clash</span> <span class="o">=</span> <span class="k">lambda</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">river</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">river</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">drt</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">drt</span> <span class="o">==</span> <span class="mi">0</span>
+</code></pre></div>
+To understand fish_clash(), the reader must:
+- Know that <code>river</code> is the stack (defined above)
+- Know that <code>river[-1]</code> is the top fish
+- Know that <code>drt</code> is the current fish's direction, not the top fish's
+- Know that <code>1</code> means downstream and <code>0</code> means upstream
+- Know that <code>fish</code> (the variable) exists and is the current fish</p>
+<h5 id="verdict">Verdict<a class="headerlink" href="#verdict" title="Permanent link">&para;</a></h5>
+<p>Five hidden dependencies. The reader still has to open the lambda body and trace every free variable, making it self-obscuring with a friendly label, rather than self-documenting.</p>
+<h4 id="better-example">Better Example<a class="headerlink" href="#better-example" title="Permanent link">&para;</a></h4>
+<p><code>python
+def will_fish_fight(top, incoming):
+return top.direction == DOWNSTREAM and incoming.direction == UPSTREAM</code>
+- Clearly shows it's a function returning a boolean on whether the fish will fight
+- But the name may be a little long. Maybe, maybe not. See next part</p>
+</blockquote>
+<h3 id="variable-object-and-function-naming">Variable, Object and Function Naming<a class="headerlink" href="#variable-object-and-function-naming" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>[!note] How to make Good, Self-documenting Names
+A good name:
+- Describes <strong>exactly what the thing is</strong>, not the action or feeling:
+  - <code>surviving_fish = []</code>or <code>living_fish = []</code>
+      - NOT just <code>alive</code> or <code>river</code>
+- Are <strong>as long as their scope demands</strong>
+  - <code>surviving_fish</code>is a function-wide level variable, that is used in the return value. It's pretty important and deserves a long name.
+  - A variable in a nested loop needs to be short - you've already got very little space to work with.
+      - A module/public API variable/function/object? That requires a full name with documentation
+- Are consistent across the codebase
+- Should <strong>not require a comment</strong> to be understood
+  - If a variable is only used in a very small section of the code, then you may get away with a small name.
+      - <code>idx</code>, or <code>x, y</code>.
+  - Even then, there's standards for abbreviations too:
+      - <code>row</code>/<code>col</code> — 2D data
+      - <code>i</code>, <code>j</code>, <code>k</code> — loop indices.
+          - Though <code>i</code> and <code>j</code> are infamously known to be extremely easy to mix-up in nested loops.
+          - Even Google recommends using more descriptive names in loops because of this.
+              - <code>r</code> instead of <code>i</code> or <code>row</code>
+              - <code>c</code> instead of <code>j</code> or <code>col</code>/<code>column
+      -</code>n<code>— count of items
+      -</code>x<code>,</code>y<code>,</code>z<code>— coordinates
+      -</code>id<code>— identifier
+      -</code>url<code>,</code>http<code>,</code>api<code>— well-known acronyms
+      -</code>min<code>,</code>max<code>,</code>len<code>— standard
+      -</code>dpi<code>,</code>rgb<code>,</code>html<code>— universally known
+  - Though yes, you can shorten names in very small contexts, where the meaning is still very obvious:
+      - From:</code>for surviving_fish in surviving_fish_by_size:<code>- To:</code>for f in surviving_fish_by_size:<code>- From:</code>for row in range(rows):<code>-</code>for col in range(cols)<code>- To:
+  - Below is an example of exactly a bad name that fails to be self-documenting, because it required a comment to be understood:
+      - ```python
+def will_fish_fight(stack_fish_drt, new_fish_drt): # drt = DiRecTion ```
+      - The **comment is critical** to understanding what the parameters stand for
+          - You are forcing any reader of this code to learn the meaning of these parameters by jumping back in the code. Not self-documenting at all
+      -</code>drt<code>**on it's own is ambiguous**, maybe it's short for</code>dirt<code>, the word closest to it in the English Language?
+          - Meanwhile</code>direction<code>is completely unambiguous, and not much longer. Plus nowadays, IDEs can autocomplete such names.
+      - These **variable names will NOT appear if someone does a search** for</code>direction<code>- And here's the same example improved:
+      - ```python
+def will_fish_fight(top_direction, new_direction):```
+      - Use</code>direction<code>- plain, simple, unmistakable english.
+          - Even better to **use words directly from the question**, so its meaning cannot be misunderstood. No inventing new words
+      - We can actually shorten the parameter names by removing</code>fish` from both - because the function name itself already clearly mentions fish.</p>
+</blockquote>
+<h3 id="tuples-are-immutable">Tuples are <strong>Immutable</strong><a class="headerlink" href="#tuples-are-immutable" title="Permanent link">&para;</a></h3>
+<p>Tuples are <strong>immutable</strong>, so best not to use tuples for data that needs to change.</p>
+<h3 id="named-tuples-in-python">Named Tuples in Python<a class="headerlink" href="#named-tuples-in-python" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">namedtuple</span>
+
+<span class="c1"># Note Fish is a special type of class</span>
+<span class="n">Fish</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s2">"Fish"</span><span class="p">,</span> <span class="p">[</span><span class="s2">"size"</span><span class="p">,</span> <span class="s2">"direction"</span><span class="p">])</span>
+<span class="n">Fish</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="problem">Problem<a class="headerlink" href="#problem" title="Permanent link">&para;</a></h2>
+<p>You are given two non-empty arrays A and B consisting of N integers. Arrays A and B represent N voracious fish in a river, ordered downstream along the flow of the river.</p>
+<p>The fish are numbered from 0 to N − 1. If P and Q are two fish and P &lt; Q, then fish P is initially upstream of fish Q. Initially, each fish has a unique position.</p>
+<p>Fish number P is represented by A[P] and B[P]. Array A contains the sizes of the fish. All its elements are unique. Array B contains the directions of the fish. It contains only 0s and/or 1s, where:</p>
+<pre><code>    0 represents a fish flowing upstream,
+    1 represents a fish flowing downstream.
+</code></pre>
+<p>If two fish move in opposite directions and there are no other (living) fish between them, they will eventually meet each other. Then only one fish can stay alive − the larger fish eats the smaller one. More precisely, we say that two fish P and Q meet each other when P &lt; Q, B[P] = 1 and B[Q] = 0, and there are no living fish between them. After they meet:</p>
+<pre><code>    If A[P] &gt; A[Q] then P eats Q, and P will still be flowing downstream,
+    If A[Q] &gt; A[P] then Q eats P, and Q will still be flowing upstream.
+</code></pre>
+<p>We assume that all the fish are flowing at the same speed. That is, fish moving in the same direction never meet. The goal is to calculate the number of fish that will stay alive.</p>
+<p>For example, consider arrays A and B such that:</p>
+<p>A[0] = 4 B[0] = 0
+  A[1] = 3 B[1] = 1
+  A[2] = 2 B[2] = 0
+  A[3] = 1 B[3] = 0
+  A[4] = 5 B[4] = 0
+content_copy</p>
+<p>Initially all the fish are alive and all except fish number 1 are moving upstream. Fish number 1 meets fish number 2 and eats it, then it meets fish number 3 and eats it too. Finally, it meets fish number 4 and is eaten by it. The remaining two fish, number 0 and 4, never meet and therefore stay alive.</p>
+<p>Write a function:</p>
+<pre><code>class Solution { public int solution(int[] A, int[] B); }
+content_copy
+</code></pre>
+<p>that, given two non-empty arrays A and B consisting of N integers, returns the number of fish that will stay alive.</p>
+<p>For example, given the arrays shown above, the function should return 2, as explained above.</p>
+<p>Write an efficient algorithm for the following assumptions:</p>
+<pre><code>    N is an integer within the range [1..100,000];
+    each element of array A is an integer within the range [0..1,000,000,000];
+    each element of array B is an integer that can have one of the following values: 0, 1;
+    the elements of A are all distinct.
+</code></pre>
+<h2 id="test-cases">Test Cases<a class="headerlink" href="#test-cases" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>([5, 1, 2, 3, 4], [1, 1, 1, 0, 1])
+</code></pre></div>
+<h2 id="code">Code<a class="headerlink" href="#code" title="Permanent link">&para;</a></h2>
+<h3 id="attempt-3">Attempt 3<a class="headerlink" href="#attempt-3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>This is a practically perfect answer. All problems here are negligible by comparison to the issues the other solutions had
+<div class="highlight"><pre><span></span><code><span class="c1"># UPSTREAM = 0</span>
+<span class="n">DOWNSTREAM</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">solution</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+    <span class="n">downstream_fish</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># A stack data-type</span>
+    <span class="n">survived_upstream_fish</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">size</span><span class="p">,</span> <span class="n">direction</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">direction</span> <span class="o">==</span> <span class="n">DOWNSTREAM</span><span class="p">:</span>
+            <span class="n">downstream_fish</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+            <span class="k">continue</span>
+
+        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">downstream_fish</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">size</span> <span class="o">&gt;</span> <span class="n">downstream_fish</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="n">downstream_fish</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">downstream_fish</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">survived_upstream_fish</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">survived_upstream_fish</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">downstream_fish</span><span class="p">)</span>
+</code></pre></div></li>
+</ul>
+<h3 id="attempt-2">Attempt 2<a class="headerlink" href="#attempt-2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Apparently, I made the readability even worse by adding an abstraction which handles much logic
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">namedtuple</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
+
+<span class="n">Fish</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s2">"Fish"</span><span class="p">,</span> <span class="p">[</span><span class="s2">"size"</span><span class="p">,</span> <span class="s2">"direction"</span><span class="p">])</span>
+<span class="n">UPSTREAM</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">DOWNSTREAM</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">Fish_Encounter_Result</span> <span class="o">=</span> <span class="n">Enum</span><span class="p">(</span><span class="s2">"Fish_Encounter_Result"</span><span class="p">,</span> <span class="p">[</span><span class="s2">"NO_FIGHT"</span><span class="p">,</span> <span class="s2">"FISH1_WINS"</span><span class="p">,</span> <span class="s2">"FISH2_WINS"</span><span class="p">])</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">fish_encounter</span><span class="p">(</span><span class="n">fish1</span><span class="p">:</span> <span class="n">Fish</span><span class="p">,</span> <span class="n">fish2</span><span class="p">:</span> <span class="n">Fish</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Fish_Encounter_Result</span><span class="p">:</span>
+    <span class="c1"># print("fish1: ", fish1)</span>
+    <span class="c1"># print("fish2: ", fish2)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">fish1</span><span class="o">.</span><span class="n">direction</span> <span class="o">==</span> <span class="n">DOWNSTREAM</span> <span class="ow">and</span> <span class="n">fish2</span><span class="o">.</span><span class="n">direction</span> <span class="o">==</span> <span class="n">UPSTREAM</span><span class="p">):</span>
+        <span class="c1"># print("NO_FIGHT")</span>
+        <span class="k">return</span> <span class="n">Fish_Encounter_Result</span><span class="o">.</span><span class="n">NO_FIGHT</span>
+
+    <span class="k">elif</span> <span class="n">fish1</span><span class="o">.</span><span class="n">size</span> <span class="o">&gt;</span> <span class="n">fish2</span><span class="o">.</span><span class="n">size</span><span class="p">:</span>
+        <span class="c1"># print("FISH1_WINS")</span>
+        <span class="k">return</span> <span class="n">Fish_Encounter_Result</span><span class="o">.</span><span class="n">FISH1_WINS</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># print("FISH2_WINS")</span>
+        <span class="k">return</span> <span class="n">Fish_Encounter_Result</span><span class="o">.</span><span class="n">FISH2_WINS</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">solution</span><span class="p">(</span><span class="n">A</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">B</span><span class="p">:</span> <span class="nb">list</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+    <span class="n">surviving_fish</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">size</span><span class="p">,</span> <span class="n">direction</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+        <span class="n">new_fish</span> <span class="o">=</span> <span class="n">Fish</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">direction</span><span class="p">)</span>
+
+        <span class="c1"># print("===================================")</span>
+        <span class="c1"># print("surviving_fish: ", surviving_fish)</span>
+        <span class="c1"># print("new_fish: ", new_fish)</span>
+
+        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">surviving_fish</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">fish_encounter</span><span class="p">(</span><span class="n">surviving_fish</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">new_fish</span><span class="p">)</span> <span class="o">==</span> <span class="n">Fish_Encounter_Result</span><span class="o">.</span><span class="n">FISH2_WINS</span><span class="p">:</span>
+            <span class="n">surviving_fish</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+            <span class="c1"># print("DIED")</span>
+
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">surviving_fish</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> \
+            <span class="n">fish_encounter</span><span class="p">(</span><span class="n">surviving_fish</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">new_fish</span><span class="p">)</span> <span class="o">!=</span> <span class="n">Fish_Encounter_Result</span><span class="o">.</span><span class="n">FISH1_WINS</span><span class="p">:</span>
+            <span class="n">surviving_fish</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">new_fish</span> <span class="p">)</span>
+            <span class="c1"># print("surviving_fish new: ", surviving_fish)</span>
+        <span class="c1"># else: surviving_fish[-1] ate new_fish. It's already in surviving_fish, so just don't add new_fish</span>
+
+    <span class="c1"># print("surviving_fish FINAL: ", surviving_fish)</span>
+    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">surviving_fish</span><span class="p">)</span>
+</code></pre></div></li>
+</ul>
+<h3 id="attempt-1">Attempt 1<a class="headerlink" href="#attempt-1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>This solution works, but it is very messy. Better rewrite this in a readable/simple way
+<div class="highlight"><pre><span></span><code><span class="c1"># Not sure what the optimal solution will look like</span>
+<span class="c1"># So start with the unoptimal one and make realizations</span>
+<span class="c1"># The unoptimal one is ugly - basically a fancy Bubble Sort on B, affecting A: O(n^2)</span>
+<span class="c1"># 2 for loops (iterating opposite directions) inside a while loop which checks if B is sorted</span>
+<span class="c1"># The optimal one will use a stack, because we only care about</span>
+<span class="c1">#   the active fish, and the top of the stack can append and pop</span>
+<span class="c1">#   - move both directions. This is likely the one pass solution</span>
+<span class="c1">#</span>
+<span class="c1"># Realization 1: Once B is ordered, we can stop</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">namedtuple</span>
+
+<span class="c1"># Note Fish is a special type of class</span>
+<span class="c1"># szs = SiZeS</span>
+<span class="c1"># drts = DiRecTionS</span>
+<span class="n">Fish</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s2">"Fish"</span><span class="p">,</span> <span class="p">[</span><span class="s2">"sz"</span><span class="p">,</span> <span class="s2">"drt"</span><span class="p">])</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">solution</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+    <span class="n">river</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">sz</span><span class="p">,</span> <span class="n">drt</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+        <span class="n">fish</span> <span class="o">=</span> <span class="n">Fish</span><span class="p">(</span><span class="n">sz</span><span class="p">,</span> <span class="n">drt</span><span class="p">)</span>
+
+        <span class="n">fish_clash</span> <span class="o">=</span> <span class="k">lambda</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">river</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> \
+                                <span class="n">river</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">drt</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">drt</span> <span class="o">==</span> <span class="mi">0</span>
+
+        <span class="n">new_fish_wins</span> <span class="o">=</span> <span class="k">lambda</span><span class="p">:</span> <span class="n">fish</span><span class="o">.</span><span class="n">sz</span> <span class="o">&gt;</span> <span class="n">river</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">sz</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">fish_clash</span><span class="p">():</span>
+            <span class="n">river</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fish</span><span class="p">)</span>
+            <span class="k">continue</span>
+
+        <span class="k">while</span> <span class="n">fish_clash</span><span class="p">()</span> <span class="ow">and</span> <span class="n">new_fish_wins</span><span class="p">():</span>
+            <span class="n">river</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span> <span class="c1"># Kill Fish</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">fish_clash</span><span class="p">():</span> <span class="c1"># New fish beat all downstream fish</span>
+            <span class="n">river</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fish</span><span class="p">)</span>
+        <span class="c1"># else: # New fish died to river[-1]. It's already in river</span>
+
+    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">river</span><span class="p">)</span>
+</code></pre></div></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
